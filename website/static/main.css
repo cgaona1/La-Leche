@@ -11,6 +11,7 @@ body {
     background-color: rgb(172, 227, 218);
     /* border-radius: 10px; */
     height: 20%;
+
 }
 
 #gallery_box {
@@ -45,6 +46,9 @@ body {
     color: black;
     text-align: center;
     background-color: white;
+}
+#contact_page_body{
+    text-align: center;
 }
 
 
