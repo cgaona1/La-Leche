@@ -9,7 +9,21 @@
 </head>
 
 <body>
+    <div id="gallery_box">
+        <h1> Gallery </h1>
+        <hr>
+        <div id="items_inside_gallery_box">
 
+                {% for product in object_list %}
+                  <h1>{{product.name}}</h1>
+                  <p> Price: {{product.cost}}</p>
+                  <p> Quantity: {{product.quantity}}</p>
+                  <img src="{{product.image}}" alt="{{product.name}}" width="300px">
+                  <hr>
+                {% endfor %}
+
+        </div>
+    </div>
 </body>
 
 </html>
