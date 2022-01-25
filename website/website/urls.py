@@ -16,7 +16,7 @@ Including another URLconf
 from sys import getprofile
 from django.contrib import admin
 from django.urls import path
-from store.views import HomePage, OwnerPage, CreateItem, DeletePage
+from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info
 
 
 # wesite urls
@@ -25,6 +25,7 @@ urlpatterns = [
     path('', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
+    path('contact', Contact_Info.as_view(), name="contact"),
 
 
 ]

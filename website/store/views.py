@@ -39,3 +39,8 @@ class DeletePage(TemplateView):
     model = Product
     template_name = "delete_item.html"
     success_url = reverse_lazy('home')
+
+
+class Contact_Info(TemplateView):
+    model = Product
+    template_name = "contact_page.html"
