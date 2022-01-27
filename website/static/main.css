@@ -11,13 +11,14 @@ body {
     background-color: rgb(172, 227, 218);
     /* border-radius: 10px; */
     height: 20%;
+
 }
 
 #gallery_box {
     border: 5px outset black;
     /* background-color: lightgoldenrodyellow; */
     height: 80%;
-    width: 74%;
+    width: 100%;
     /* border-radius: 10px; */
     display: inline-block;
 }
@@ -45,6 +46,9 @@ body {
     color: black;
     text-align: center;
     background-color: white;
+}
+#contact_page_body{
+    text-align: center;
 }
 
 
