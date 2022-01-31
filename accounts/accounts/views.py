@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, RedirectView, UpdateView
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -44,3 +45,8 @@ class AccountDeleteView(LoginRequiredMixin, DeleteView):
     model = User
     template_name = 'account_delete.html'
     success_url = reverse_lazy('account_list')
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> b4da8a32ed660be1ab26b70d5e1b266e155582dd
