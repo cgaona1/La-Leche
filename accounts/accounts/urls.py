@@ -2,12 +2,12 @@
 from django.contrib import admin
 from django.urls import path
 
-from accounts.views import AccountDeleteView, AccountDetailView, AccountListView, AccountCreateView, AccountUpdateView, SignUpView
+from accounts.views import AccountDeleteView, AccountDetailView, AccountCreateView, AccountUpdateView, SignUpView
 
 urlpatterns = [
 
     # Account Views
-    path('',                   AccountListView.as_view(),    name='account_list'),
+    path('login/',             SignUpView.as_view(),    name='login'),
     path('<int:pk>',           AccountDetailView.as_view(),  name='account_detail'),
     path('add',                AccountCreateView.as_view(),  name='account_add'),
     path('<int:pk>/',          AccountUpdateView.as_view(),  name='account_edit'),
