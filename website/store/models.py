@@ -8,7 +8,7 @@ class Product(models.Model):
     cost = models.CharField(max_length=300, default="")
     # description = models.TextField(max_length=300, default="")
     quantity = models.CharField(max_length=300, default="")
-    image = models.CharField(max_length=300)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
 
     def __str__(self):
         return f"{self.name}"

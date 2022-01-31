@@ -29,9 +29,10 @@
 
                 {% for product in object_list %}
                   <h1>{{product.name}}</h1>
-                  <p> Price: {{product.cost}}</p>
+                  <p> Price: ${{product.cost}}</p>
                   <p> Quantity: {{product.quantity}}</p>
-                  <img src="{{product.image}}" alt="{{product.name}}" width="300px">
+
+                  <img src="{{ product.image.url }}" alt="{{product.name}}" width="300px">
                   <hr>
                 {% endfor %}
 

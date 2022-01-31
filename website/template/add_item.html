@@ -17,7 +17,7 @@
     <br>
     <div id="add_form_out">
 
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {%csrf_token%}
             <!-- <p>d &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp vvdvd</p> -->
 
@@ -37,9 +37,7 @@
             <br>
             <br>
             Image:
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             {{form.image}}
-
             <br>
 
             <br>

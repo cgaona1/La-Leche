@@ -21,13 +21,13 @@ Systems analysis and design group project.
 
 #David Rev - Creating account functionality - owner should be able to create an account ( 40% done)
 
-#David T - Gui for owners editing page - The owner page should be view all the items, it should look similar to the ownerpage wireframe made( 20% done)
+#David T - Gui for owners editing page - The owner page should be view all the items, it should look similar to the ownerpage wireframe made( 40% done)
 
-#Caden B - Gui for delete page - owner should be able to delete item,page should ask the ower to confirm deleting an item ( 60% done)
+#Caden B - Gui for delete page - owner should be able to delete item,page should ask the ower to confirm deleting an item ( 90% done)
+#reorganize the gallerpage so that two items show on one line
 
 - reorganize gallery- there should be two items next to eachother then a new line with another two items
 #Chris G - Research reminder functionality ( cellery- 100% Done )
-
 #ask chris or O Moo for help if needed because they are 100% done
 
 # week3
