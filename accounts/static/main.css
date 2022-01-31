@@ -1,53 +1,16 @@
-html,
 body {
-    margin: 0;
-    height: 100%;
+    color: #444444;
 }
 
-#heading {
-    color: black;
-    border: 2px outset black;
-    font-size: 25px;
-    background-color: rgb(172, 227, 218);
-    /* border-radius: 10px; */
-    height: 20%;
-
+table {
+    box-shadow: 2px 2px 5px black;
 }
 
-#gallery_box {
-    border: 5px outset black;
-    /* background-color: lightgoldenrodyellow; */
-    height: 80%;
-    width: 100%;
-    /* border-radius: 10px; */
-    display: inline-block;
-}
 
-#contact_box {
-    border: 8px outset black;
-    /* background-color: lightblue; */
-    height: 80%;
-    width: 25%;
-    float: right;
-    border-radius: 10px;
+header {
+    background-color: #198754;
+    border-radius: 40px;
     text-align: center;
+    padding: 3em;
+    margin: 3em;
 }
-
-#items_inside_gallery_box {
-    text-align: center;
-    border: 2px outset red;
-    /* background-color: lightgoldenrodyellow; */
-    height: 80%;
-    width: 100%;
-    /* border-radius: 10px; */
-    overflow: auto;
-}
-#add_page_body{
-    color: black;
-    text-align: center;
-    background-color: white;
-}
-#contact_page_body{
-    text-align: center;
-}
-

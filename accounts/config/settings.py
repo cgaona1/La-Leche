@@ -20,13 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
 SECRET_KEY = 'django-insecure-jp6dycr3fp48!!prg+f!yw(%vm&jf@6)8j)=bswlg+vxd66!n5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['omoo13.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['reve4760.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -133,6 +132,4 @@ STATIC_ROOT = BASE_DIR / "static_assets"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
