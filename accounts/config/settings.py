@@ -20,20 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
+
 SECRET_KEY = 'django-insecure-jp6dycr3fp48!!prg+f!yw(%vm&jf@6)8j)=bswlg+vxd66!n5'
-=======
-SECRET_KEY = 'django-insecure-dlj%29fv00+f_qz(#tbvms2_c98x&7)vu#!r#=3%m3@$gifsf6'
->>>>>>> b4da8a32ed660be1ab26b70d5e1b266e155582dd
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['omoo13.pythonanywhere.com', '127.0.0.1', 'localhost']
-=======
-ALLOWED_HOSTS = ['omoo13.pythonanywhere.com', '127.0.0.1']
->>>>>>> b4da8a32ed660be1ab26b70d5e1b266e155582dd
 
 
 # Application definition
@@ -93,11 +86,8 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
-=======
->>>>>>> b4da8a32ed660be1ab26b70d5e1b266e155582dd
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -144,7 +134,5 @@ STATIC_ROOT = BASE_DIR / "static_assets"
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-<<<<<<< HEAD
-=======
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
->>>>>>> b4da8a32ed660be1ab26b70d5e1b266e155582dd
+
