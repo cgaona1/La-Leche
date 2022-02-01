@@ -27,6 +27,8 @@ urlpatterns = [
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
+    path('ownerpage', OwnerPage.as_view(), name="contact"),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

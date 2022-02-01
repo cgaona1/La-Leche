@@ -1,7 +1,7 @@
 
 from itertools import product
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView, ListView
+from django.views.generic import TemplateView, CreateView, ListView, UpdateView
 from .models import Product
 # Create your views here.
 
