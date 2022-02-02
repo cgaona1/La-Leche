@@ -13,10 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from sys import getprofile
+
 from django.contrib import admin
 from django.urls import path
-from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info
+from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info, Detail_View
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -27,7 +27,11 @@ urlpatterns = [
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
-    path('ownerpage', OwnerPage.as_view(), name="contact"),
+    path('ownerpage', OwnerPage.as_view(), name="owner"),
+    path('<int:pk>', Detail_View.as_view(), name="detail"),
+
+
+
 
 ]
 if settings.DEBUG:

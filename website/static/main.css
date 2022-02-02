@@ -16,11 +16,20 @@ body {
 
 #gallery_box {
     border: 5px outset black;
-    /* background-color: lightgoldenrodyellow; */
+    background-color: lightgoldenrodyellow;
     height: 80%;
     width: 100%;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     display: inline-block;
+
+    /* border: 5px outset black;
+    background-color: lightgoldenrodyellow;
+    height: 80%;
+    width: 74%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly; */
 }
 
 #contact_box {

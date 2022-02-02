@@ -51,7 +51,7 @@ Chris G - Notification
 
 David T - Owner Page
           Def of done:
-          1. Over must be able to view all the rpoducts in the database
+          1. Over must be able to view all the products in the database
 
 David R - Account page:
           Def of done:
