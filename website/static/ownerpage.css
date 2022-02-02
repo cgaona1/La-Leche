@@ -1,0 +1,11 @@
+#gallery_box{
+    display: flex;
+    background-color: brown;
+
+
+}
+
+#item_inside_gallery_box{
+    margin: auto;
+    display: flex;
+}
