@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeley Asian Store</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="../static/main.css">
 </head>
 
 <body id="body">
 
     <div id="heading">
-    <h1> Greeley Asian Store </h1>
+        <h1> Greeley Asian Store </h1>
         <p class="btn btn-success">Owner Login</p>
         <a class="btn btn-success" href="add"> Add Item</a>
         <a class="btn btn-success" href="contact"> Contact Information</a>
@@ -21,19 +21,24 @@
 
     </div>
 
-
+    <h1> Gallery </h1>
     <div id="gallery_box">
-        <h1> Gallery </h1>
-        <hr>
+
+
         <div id="items_inside_gallery_box">
 
-                {% for product in object_list %}
-                  <h1>{{product.name}}</h1>
-                  <p> Price: {{product.cost}}</p>
-                  <p> Quantity: {{product.quantity}}</p>
-                  <img src="{{product.image}}" alt="{{product.name}}" width="300px">
-                  <hr>
-                {% endfor %}
+            {% for product in object_list %}
+            <div id="product">
+                <h1>{{product.name}}</h1>
+                <p> Price: ${{product.cost}}</p>
+                <p> Quantity: {{product.quantity}}</p>
+                {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{product.name}}" width="300px">
+                {% endif %}
+            </div>
+
+
+            {% endfor %}
 
         </div>
     </div>
