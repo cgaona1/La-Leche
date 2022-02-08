@@ -57,3 +57,35 @@ David R - Account page:
           Def of done:
           1. Ower must be able to login
           2. Once logged in owner there must be a welcome messaged with the owner name
+
+#week 4
+O Moo G - Search functionality
+          Def of done:
+          1.There has to be a search box and search button, top righ of gallery page
+          2.The page must look for items that are type in by the user
+
+
+David T - Style the owner page
+          Def done:
+          1.Style all button
+          2.Make owner page look like the home page
+
+David R - Accout Functionality
+          Def of done:
+          1.Commit and merge code to git hub
+          2.Create account for owner
+          3.Create the login/logout functionality
+Caden B - Create Delete view
+          Def of done:
+          1.Owner must be able to delete item
+          2.After deleting the page must redirect to the owner/admin page.
+          3.Style the buttons and delete form in the delete page.
+Chris G - Notification
+          Def of Done:
+          1. There must be email/notification page in html
+          2. There must be a text field to enter user email,message
+          3. There must a send button to send the email
+          4. The app must must send email.
+
+
+
