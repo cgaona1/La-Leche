@@ -14,9 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from sys import getprofile
+from unicodedata import name
 from django.contrib import admin
 from django.urls import path
 from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info
+from accounts.views import SignUpView
 
 
 # wesite urls
@@ -26,4 +28,5 @@ urlpatterns = [
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
+    path('signup', SignUpView.as_view(), name="signup")
 ]
