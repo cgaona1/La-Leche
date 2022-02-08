@@ -44,3 +44,6 @@ class DeletePage(TemplateView):
 class Contact_Info(TemplateView):
     model = Product
     template_name = "contact_page.html"
+
+class NotificationPage(TemplateView):
+    template_name = "email_notification_page.html"
