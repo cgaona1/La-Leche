@@ -6,6 +6,8 @@
 }
 
 #item_inside_gallery_box{
-    margin: auto;
     display: flex;
+    flex-flow: row wrap;
+    gap: 200px 200px;
+    align-items: stretch;
 }
