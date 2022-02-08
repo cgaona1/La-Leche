@@ -16,10 +16,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info, Detail_View
-
+from store.views import *
 from django.conf import settings
 from django.conf.urls.static import static
+
 # wesite urls
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,11 +27,9 @@ urlpatterns = [
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
+    path('notification', NotificationPage.as_view(), name="notification"),
     path('ownerpage', OwnerPage.as_view(), name="owner"),
     path('<int:pk>', Detail_View.as_view(), name="detail"),
-
-
-
 
 ]
 if settings.DEBUG:
