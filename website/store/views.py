@@ -1,7 +1,9 @@
 
-from itertools import product
+
+from socket import herror
+from tempfile import template
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView, ListView
+from django.views.generic import TemplateView, CreateView, ListView, UpdateView
 from .models import Product
 # Create your views here.
 
@@ -23,8 +25,8 @@ class HomePage(ListView):
     #     return{'product': product}
 
 
-class OwnerPage(TemplateView):
-    mode = Product
+class OwnerPage(ListView):
+    model = Product
     template_name = "ownerPage.html"
 
 
@@ -44,3 +46,13 @@ class DeletePage(TemplateView):
 class Contact_Info(TemplateView):
     model = Product
     template_name = "contact_page.html"
+
+
+class Detail_View(TemplateView):
+    model = Product
+    template_name = "item_detail.html"
+
+    def get_context_data(self, **kwargs):
+        product_id = kwargs['pk']
+        product = Product.objects.get(pk=product_id)
+        return {'product': product}

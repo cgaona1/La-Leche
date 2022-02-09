@@ -17,10 +17,11 @@ from sys import getprofile
 from unicodedata import name
 from django.contrib import admin
 from django.urls import path
-from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info
 from accounts.views import SignUpView
+from store.views import HomePage, OwnerPage, CreateItem, DeletePage, Contact_Info, Detail_View
 
-
+from django.conf import settings
+from django.conf.urls.static import static
 # wesite urls
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +29,11 @@ urlpatterns = [
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
-    path('signup', SignUpView.as_view(), name="signup")
+    path('signup', SignUpView.as_view(), name="signup"),
+    path('ownerpage', OwnerPage.as_view(), name="owner"),
+    path('<int:pk>', Detail_View.as_view(), name="detail"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

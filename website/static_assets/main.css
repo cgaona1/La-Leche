@@ -19,7 +19,10 @@ body {
     height: 80%;
     width: 74%;
     /* border-radius: 10px; */
-    display: inline-block;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
 }
 
 #contact_box {
