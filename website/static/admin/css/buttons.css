@@ -19,8 +19,10 @@ div{
 .logout:hover {
     background-color: #41caf4;
     color: red;
-   }
-
+}
+/*
+    Regular and hover styling for logout button 
+*/
 .login{
     font-size:20px;
     padding: 10px 24px;
@@ -33,4 +35,22 @@ div{
 .login:hover {
     background-color: #41caf4;
     color: rgb(30, 255, 0);
-   }
+}
+/*
+    Regular and hover styling for login button 
+*/
+.edit{
+    font-size:16px;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+.delete{
+    font-size:16px;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+.add{
+    font-size:16px;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
