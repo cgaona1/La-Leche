@@ -25,7 +25,9 @@ from django.conf.urls.static import static
 # wesite urls
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomePage.as_view(), name="home"),
+    path('', search_item, name="search"),
+
+    path('home', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),

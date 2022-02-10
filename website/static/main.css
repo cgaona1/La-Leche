@@ -11,6 +11,7 @@ body {
     background-color: rgb(172, 227, 218);
     /* border-radius: 10px; */
     height: 20%;
+    overflow: auto;
 
 }
 
