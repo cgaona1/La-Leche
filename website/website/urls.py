@@ -18,7 +18,7 @@ from unicodedata import name
 from django.contrib import admin
 from django.urls import path
 from store.views import *
-from accounts.views import SignUpView
+from accounts.views import *
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,12 +26,11 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('search', search_item, name="search"),
-
     path('', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
     path('delete/<int:pk>', DeletePage.as_view()),
     path('contact', Contact_Info.as_view(), name="contact"),
-    path('notification', NotificationPage.as_view(), name="notification"),
+    path('notification', NotificationPageView.as_view(), name="notification"),
     path('signup', SignUpView.as_view(), name="signup"),
     path('ownerpage', OwnerPage.as_view(), name="owner"),
     path('<int:pk>', Detail_View.as_view(), name="detail"),
