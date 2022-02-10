@@ -43,14 +43,20 @@ div{
     font-size:16px;
     padding: 10px 24px;
     border-radius: 10px;
+    background-color: #41caf4;
+    color: black;
+
 }
 .delete{
     font-size:16px;
     padding: 10px 24px;
     border-radius: 10px;
+    color: red;
 }
 .add{
     font-size:16px;
     padding: 10px 24px;
     border-radius: 10px;
+    background-color: #41caf4;
+    color: green;
 }
