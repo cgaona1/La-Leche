@@ -1,9 +1,17 @@
 {% extends 'store_theme.html'%} 
 
 {% block content %}
-
-<h1>Notifications</h1>
-<hr>
-
+<div>
+    <h1>Notifications</h1>
+    <hr>
+    <form method="post">
+        <div>
+            {% csrf_token %}
+            <div>{{ form.email }}</div>
+            <div>{{ form.subject }}</div>
+            <div>{{ form.remindTime }}</div>
+            <div>{{ form.message }}</div>
+        </div> 
+    </form>
 </div>
 {% endblock content %}
