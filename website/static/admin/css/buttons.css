@@ -1,0 +1,36 @@
+/*
+    CSS for Button Styling
+*/
+div{
+    text-align: center;
+}
+/*
+    Use <div></div> around buttons to center without issues
+*/
+.logout{
+    font-size: 20px;
+    padding: 10px 24px;
+    border-radius: 60%;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    color: white;
+    background-color: red;
+}
+.logout:hover {
+    background-color: #41caf4;
+    color: red;
+   }
+
+.login{
+    font-size:20px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    color: rgb(0, 0, 0);
+    background-color: rgb(30, 255, 0);
+}
+.login:hover {
+    background-color: #41caf4;
+    color: rgb(30, 255, 0);
+   }
