@@ -4,6 +4,7 @@
     <a class="btn btn-success" href="add"> Add Item</a>
     <a class="btn btn-success" href="contact"> Contact Information</a>
     <form method="GET" action="/search">
+        {% csrf_token %}
         <input type="text" placeholder="Search item" name="q" ></input>
         <input type="submit"></input>
     </form>
