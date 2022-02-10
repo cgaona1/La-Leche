@@ -2,6 +2,7 @@
 
 from socket import herror
 from tempfile import template
+from unicodedata import name
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, UpdateView
 from .models import Product
@@ -10,12 +11,14 @@ from django.shortcuts import render
 
 
 def search_item(request):
-    print(request.GET)
+
     query_dict = request.GET
     query = query_dict.get('q')
+
     product_obj = None
     if query is not None:
-        product_obj = Product.objects.get(id=query)
+        product_obj = Product.objects.filter(name__contains=query)
+
     context = {
         "product": product_obj
     }
