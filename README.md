@@ -61,7 +61,7 @@ David R - Account page:
 #week 4
 O Moo G - Search functionality
           Def of done:
-          1.There has to be a search box and search button, top righ of gallery page
+          1.There has to be a search box and search button, top right of gallery page
           2.The page must look for items that are type in by the user
 
 
