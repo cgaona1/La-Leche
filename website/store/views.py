@@ -11,13 +11,11 @@ from django.shortcuts import render
 
 
 def search_item(request):
-
     query_dict = request.GET
     query = query_dict.get('q')
-
     product_obj = None
     if query is not None:
-        product_obj = Product.objects.filter(name__contains=query)
+        product_obj = Product.objects.filter(name__icontains=query)
 
     context = {
         "product": product_obj

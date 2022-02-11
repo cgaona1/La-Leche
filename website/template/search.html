@@ -1,15 +1,37 @@
 
 {%extends 'store_theme.html'%}
     {% block content%}
-    <h2>Matched Search</h2>
-    {% if product  %}
-        {% for item in product %}
+    <!-- <h2>Matched Search...</h2>
+
+    {% for item in product %}
     <h1>{{item.name}}</h1>
     <p> Price: ${{item.cost}}</p>
     <p> Quantity: {{item.quantity}}</p>
     {% if item.image %}
     <img src="{{ item.image.url }}" alt="{{item.name}}" width="300px">
-        {% endif %}
-        {% endfor %}
     {% endif %}
-    {% endblock content %}
+    {% endfor %} -->
+    <div id="gallery_box">
+        <div id="items_inside_gallery_box">
+
+
+            {% for item in product%}
+            <div id="product">
+                <h1>{{item.name}}</h1>
+                <p> Price: ${{item.cost}}</p>
+                <p> Quantity: {{item.quantity}}</p>
+                {% if item.image %}
+                <img src="{{ item.image.url }}" alt="{{item.name}}" width="300px">
+
+                {% endif %}
+
+            </div>
+            {% endfor %}
+
+
+
+
+        </div>
+    </div>
+
+    {% endblock %}
