@@ -65,3 +65,4 @@ class Detail_View(TemplateView):
         product_id = kwargs['pk']
         product = Product.objects.get(pk=product_id)
         return {'product': product}
+
