@@ -66,3 +66,7 @@ class Detail_View(TemplateView):
         product = Product.objects.get(pk=product_id)
         return {'product': product}
 
+class Update_View(UpdateView):
+    model = Product
+    template_name = 'item_detail.html'
+    fields = ["name", "cost", "quantity", "image"]
