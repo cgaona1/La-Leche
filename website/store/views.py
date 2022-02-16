@@ -70,3 +70,4 @@ class Update_View(UpdateView):
     model = Product
     template_name = 'item_detail.html'
     fields = ["name", "cost", "quantity", "image"]
+    success_url = reverse_lazy('owner')
