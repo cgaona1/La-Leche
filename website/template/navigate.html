@@ -1,14 +1,16 @@
-<div id="heading">
-    <h1> Greeley Asian Store </h1>
-    <p class="btn btn-success">Owner Login</p>
-    <a class="btn btn-success" href="add"> Add Item</a>
-    <a class="btn btn-success" href="contact"> Contact Information</a>
-    <form method="GET" action="/search">
+
+<div id="navigate">
+
+    <h1 id="title"> Greeley Asian Store </h1>
+    <a id="owner_login" href=""> Owner Login</a>
+
+    <br>
+
+    <!-- <a class="btn btn-success" href="add"> Add Item</a> -->
+    <a href="contact" id="contact_info"> Contact Information</a>
+    <form id="search"method="GET" action="/search">
         {% csrf_token %}
         <input type="text" placeholder="Search item" name="q" ></input>
-        <input class ="btn btn-success"type="submit"></input>
+        <input id="submit" type="submit"></input>
     </form>
-
-
 </div>
-<h1> Gallery </h1>
