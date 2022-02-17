@@ -21,9 +21,11 @@
         <p> Price: ${{product.cost}}</p>
         <p> Quantity: {{product.quantity}}</p>
         {% if product.image %}
-        <img src="{{ product.image.url }}" alt="{{product.name}}" width="100%">
+        <img src="{{ product.image.url }}" alt="{{product.name}}" width="80%">
         {% endif %}
-        <a class="link" href="/ownerpage/delete/{{ product.pk }}">Delete Item</a>
+        <div>
+          <a class="link" href="/ownerpage/delete/{{ product.pk }}">Delete Item</a>
+        </div>
       </div>
       {% endfor %}
 
