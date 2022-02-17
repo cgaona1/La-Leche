@@ -28,7 +28,7 @@ urlpatterns = [
     path('search', search_item, name="search"),
     path('', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
-    path('delete/<int:pk>', DeletePage.as_view()),
+    path('ownerpage/delete/<int:pk>', DeletePage.as_view(), name="delete"),
     path('contact', Contact_Info.as_view(), name="contact"),
     path('notification', NotificationPageView.as_view(), name="notification"),
     path('signup', SignUpView.as_view(), name="signup"),
