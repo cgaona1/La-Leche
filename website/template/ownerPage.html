@@ -22,8 +22,8 @@
         <p> Quantity: {{product.quantity}}</p>
         {% if product.image %}
         <img src="{{ product.image.url }}" alt="{{product.name}}" width="300px">
-
         {% endif %}
+        <a class="link" href="/ownerpage/delete/{{ product.pk }}">Delete Item</a>
       </div>
       {% endfor %}
 

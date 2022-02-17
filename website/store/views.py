@@ -49,7 +49,12 @@ class CreateItem(CreateView):
 class DeletePage(TemplateView):
     model = Product
     template_name = "delete_item.html"
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('owner')
+
+    # def get_context_data(self, **kwargs):
+    #     product_id = kwargs['pk']
+    #     product = Product.objects.get(pk=product_id)
+    #     return {'product': product}
 
 
 class Contact_Info(TemplateView):
