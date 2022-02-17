@@ -11,7 +11,7 @@
 <body>
     <a href="{% url 'owner'%}"> go back</a>
     <div>
-        <form method="post">{% csrf_token %} {{ form.as_p }}
+        <form method="post" enctype="multipart/form-data">{% csrf_token %} {{ form.as_p }}
             <button type="submit">
                 Update
             </button>

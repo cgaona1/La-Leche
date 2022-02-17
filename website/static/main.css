@@ -11,7 +11,11 @@ body {
     background-color: black;
     /* border-radius: 10px; */
     /* height: 10%; */
-    overflow: auto;
+    /* display: flex;
+    flex-flow: row wrap;
+    gap: 60px 60px;
+    align-items: stretch;
+    overflow: auto; */
 
 
 }
@@ -34,6 +38,7 @@ body {
 #title{
     color: white;
     font-size: 60px;
+
 
 }
 
