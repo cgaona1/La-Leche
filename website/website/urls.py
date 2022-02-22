@@ -33,6 +33,7 @@ urlpatterns = [
     path('signup', SignUpView.as_view(), name="signup"),
     path('ownerpage', OwnerPage.as_view(), name="owner"),
     path('<int:pk>', Detail_View.as_view(), name="detail"),
+    path('login', SignUpView.as_view(), name='login'),
 ]
 
 if settings.DEBUG:
