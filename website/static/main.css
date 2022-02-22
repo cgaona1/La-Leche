@@ -4,18 +4,65 @@ body {
     height: 100%;
 }
 
-#heading {
+#navigate {
     color: black;
     border: 2px outset black;
-    font-size: 25px;
-    background-color: rgb(172, 227, 218);
+    font-size: 20px;
+    background-color: black;
     /* border-radius: 10px; */
-    height: 20%;
+    /* height: 10%; */
+    /* display: flex;
+    flex-flow: row wrap;
+    gap: 60px 60px;
+    align-items: stretch;
+    overflow: auto; */
+
+
+}
+#search{
+    float: right;
+}
+#submit{
+    background-color: lightblue;
+}
+#contact_info{
+    color:lightblue;
+}
+#owner_login{
+    display: flex;
+    float: right;
+    color: lightblue;
+    font-size: smaller;
+
+}
+#title{
+    color: white;
+    font-size: 60px;
+
 
 }
 
 #gallery_box {
-    background-color: bisque;
+    /* background-color: black; */
+    padding: 40px;
+    align-items: center;
+    /* border: 5px outset black;
+    height: 50%; */
+    width: 100%;
+    /* border-radius: 10px; */
+
+    /* border: 5px outset black;
+    background-color: lightgoldenrodyellow;
+    height: 80%;
+    width: 74%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly; */
+}
+
+#owner_gallery_box {
+    background-color: rgb(212, 124, 124);
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;

@@ -1,51 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeley Asian Store</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/main.css">
-</head>
-
-<body id="body">
-
-    <div id="heading">
-        <h1> Greeley Asian Store </h1>
-        <p class="btn btn-success" href="login">Owner Login</p>
-        <a class="btn btn-success" href="add"> Add Item</a>
-        <a class="btn btn-success" href="contact"> Contact Information</a>
+    {% extends 'store_theme.html'%}
 
 
-    </div>
+    {% block content %}
 
-    <h1> Gallery </h1>
+
+
+
     <div id="gallery_box">
-
-
         <div id="items_inside_gallery_box">
-
             {% for product in object_list %}
             <div id="product">
                 <h1>{{product.name}}</h1>
                 <p> Price: ${{product.cost}}</p>
                 <p> Quantity: {{product.quantity}}</p>
                 {% if product.image %}
-                <img src="{{ product.image.url }}" alt="{{product.name}}" width="300px">
+                <img src="{{ product.image.url }}" alt="{{product.name}}" width="600px">
+
                 {% endif %}
             </div>
             {% endfor %}
 
         </div>
     </div>
-    <!-- <div id="contact_box">
-        <h1>Contact Information</h1>
-
-    </div> -->
-
-
-</body>
-
-</html>
+    {% endblock content %}

@@ -61,7 +61,7 @@ David R - Account page:
 #week 4
 O Moo G - Search functionality
           Def of done:
-          1.There has to be a search box and search button, top righ of gallery page
+          1.There has to be a search box and search button, top right of gallery page
           2.The page must look for items that are type in by the user
 
 
@@ -86,6 +86,34 @@ Chris G - Notification
           2. There must be a text field to enter user email,message
           3. There must a send button to send the email
           4. The app must must send email.
+
+
+#week 5
+O Moo G - style the navigation bar
+          Def of done:
+          1.There has to be a search box and search button, top right of gallery page
+          2.resize the nav bar to look clean
+
+
+
+David T - Style the owner page
+          Def done:
+          1.Style all button
+          2.use bootstrap to style the buttons in owner page(Edit,add,delete)
+
+David R - Accout Functionality
+          Def of done:
+          1.Create account for owner
+          2.Create the login/logout functionality
+
+Caden B - Create Delete view, edit view
+          Def of done:
+          1.Owner must be able to delete item
+          2.After deleting the page must redirect to the owner/admin page.
+
+Chris G - Notification functionality
+          Def of Done:
+          1. set up celery to keep track of task
 
 
 

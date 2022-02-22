@@ -2,49 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owner Page</title>
-    <link rel="stylesheet" href="../static/ownerpage.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Page</title>
+  <link rel="stylesheet" href="../static/main.css">
 </head>
 
 <body>
-    <h1>Gallery</h1>
-    <div id="gallery_box">
+  <h1>Gallery</h1>
 
+  <div id="owner_gallery_box">
+    <div id="items_inside_gallery_box">
 
+      {% for product in object_list %}
+      <div id="product">
+        <h1><a href="ownerpage/{{product.pk}}"> {{product.name}}</a></h1>
+        <p> Price: ${{product.cost}}</p>
+        <p> Quantity: {{product.quantity}}</p>
+        {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{product.name}}" width="80%">
+        {% endif %}
+        <div>
+          <a class="link" href="/ownerpage/delete/{{ product.pk }}">Delete Item</a>
+        </div>
+      </div>
+      {% endfor %}
 
-        <div id="items_inside_gallery_box">
-            {% for product in object_list %}
-            <a href="{{product.pk}}"> {{product.name}}</a>
-              <p> Price: ${{product.cost}}</p>
-              <p> Quantity: {{product.quantity}}</p>
-                {% if product.image %}
-              <img src="{{ product.image.url }}" alt="{{product.name}}" width="300px">
-              {% endif %}
-            <br>
-            <br>
-
-
-
-            {% endfor %}
 
     </div>
-
-
-
-
-
-
-        {% for product in object_list%}
-
-        <br>
-        <br><br>
-
-        {% endfor%}
-
-
+  </div>
 
 </body>
 
