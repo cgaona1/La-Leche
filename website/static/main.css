@@ -3,6 +3,9 @@ body {
     margin: 0;
     height: 100%;
 }
+#home{
+    font-size: large;
+}
 
 #navigate {
     color: black;
@@ -11,33 +14,36 @@ body {
     background-color: black;
     /* border-radius: 10px; */
     /* height: 10%; */
-    /* display: flex;
-    flex-flow: row wrap;
-    gap: 60px 60px;
-    align-items: stretch;
-    overflow: auto; */
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* gap: 60px 60px; */
+    /* align-items: stretch; */
+    overflow: auto;
+}
+#navigate_2{
+
+/* display: block; */
+float: right;
+background-color: lightyellow;
+}
 
 
-}
-#search{
-    float: right;
-}
 #submit{
     background-color: lightblue;
 }
 #contact_info{
-    color:lightblue;
+    font-size: large;
 }
 #owner_login{
-    display: flex;
-    float: right;
-    color: lightblue;
-    font-size: smaller;
+
+    /* float: right; */
+    font-size: large;
 
 }
 #title{
     color: white;
-    font-size: 60px;
+    font-size: 70px;
+
 
 
 }
@@ -97,6 +103,7 @@ body {
     width: 100%; */
     /* border-radius: 10px; */
     /* overflow: auto; */
+    /* width: 100%; */
     display: flex;
     flex-flow: row wrap;
     gap: 200px 200px;
