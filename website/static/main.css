@@ -47,7 +47,10 @@ float: right;
 
 
 }
+h2{
 
+    text-decoration: underline
+}
 #gallery_box {
     /* background-color: black; */
     padding: 40px;
@@ -68,7 +71,7 @@ float: right;
 }
 
 #owner_gallery_box {
-    background-color: rgb(212, 124, 124);
+
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;
@@ -118,11 +121,16 @@ float: right;
 
 #add_page_body{
     color: black;
+    width: 100%;
+    margin: auto;
     text-align: center;
     background-color: white;
 }
-#contact_page_body{
+#contact_page{
+    margin: auto;
+    width: 100%;
     text-align: center;
 }
+
 
 
