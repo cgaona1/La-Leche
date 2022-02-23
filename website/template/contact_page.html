@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/main.css">
-    <title>Contact Information</title>
-</head>
-<body id="contact_page_body">
+{%  extends 'store_theme.html'%}
+
+{% block content%}
+
+<div id="contact_page">
     <h1>Contact Information</h1>
     <br>
-    <a href="/"> Return to home page</a>
-
-
 
         <br>
         <div id="contact_info_form">
             <h3>Store Phone Number
             </h3>
             <p>(970) 573-5946</p>
-            <h3>Store Hour</h3>
+            <h3>Store Hours</h3>
             <p>Monday: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9am-7pm</p>
             <p>Tuesday: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9am-7pm</p>
             <p>Wednesday: &nbsp&nbsp9am-7pm</p>
@@ -31,5 +23,6 @@
             <p>3000 23th Ave, 2 <br>
             Greeley,CO 80630</p>
         </div>
-</body>
-</html>
+    </div>
+
+{%endblock%}

@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, UpdateView
 from .models import Product
 from django.shortcuts import render
+from crispy_forms.helper import FormHelper
 # Create your views here.
 
 
@@ -70,6 +71,7 @@ class Detail_View(TemplateView):
         product_id = kwargs['pk']
         product = Product.objects.get(pk=product_id)
         return {'product': product}
+
 
 class Update_View(UpdateView):
     model = Product
