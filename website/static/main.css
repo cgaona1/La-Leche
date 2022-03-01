@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     gap: 20px 20px;
+    overflow: auto;
 }
 
 
@@ -57,7 +58,7 @@ h2{
     text-decoration: underline
 }
 #gallery_box {
-    /* background-color: black; */
+    /* background-color: #ffb3b3; */
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;
