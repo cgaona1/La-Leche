@@ -1,19 +1,15 @@
-{% extends 'home.html'%} {% block content %}
+{% extends 'store_theme.html'%}
+{% block content %}
 
-<h1>Delete</h1>
-<hr>
+    <h1>Delete</h1>
+    <a href="{% url 'owner'%}">go back</a>
+    <div >
+        <form method="post">
+            {% csrf_token %}
+            <p>Are you sure you want to delete item?</p>
+            <button type="submit" value="Confirm">Yes</button>
+        </form>
+    </div>
 
-<div id="body-main"> {% if user.is_authenticated %}
-    <form method="post">
-        {% csrf_token %}
-        <p>Are you sure you want to delete item?</p>
-        <button type="submit" value="Confirm">Yes</button>
-    </form>
 
-
-    {% else %}
-    <p>You are not logged in</p>
-    <a class="link" href="/">Go Home</a>
-    {% endif %}
-</div>
-{% endblock content %}
+{%endblock content%}

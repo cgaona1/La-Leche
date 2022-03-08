@@ -3,20 +3,62 @@ body {
     margin: 0;
     height: 100%;
 }
-
-#heading {
-    color: black;
-    border: 2px outset black;
-    font-size: 25px;
-    background-color: rgb(172, 227, 218);
-    /* border-radius: 10px; */
-    height: 20%;
-    overflow: auto;
-
+#home{
+    font-size: large;
 }
 
+#navigate {
+    color: black;
+    border: 2px outset black;
+    font-size: 20px;
+    background-color: black;
+    /* border-radius: 10px; */
+    /* height: 10%; */
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* gap: 60px 60px; */
+    /* align-items: stretch; */
+
+
+    overflow: auto;
+}
+#navigate_2{
+
+
+
+    float: right;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px 20px;
+    overflow: auto;
+}
+
+
+#submit{
+    background-color: lightblue;
+}
+#contact_info{
+    font-size: large;
+}
+#owner_login{
+
+    /* float: right; */
+    font-size: large;
+
+}
+#title{
+    color: white;
+    font-size: 70px;
+
+
+
+}
+h2{
+
+    text-decoration: underline
+}
 #gallery_box {
-    background-color: bisque;
+    /* background-color: #ffb3b3; */
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;
@@ -35,7 +77,7 @@ body {
 }
 
 #owner_gallery_box {
-    background-color: rgb(212, 124, 124);
+
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;
@@ -70,6 +112,7 @@ body {
     width: 100%; */
     /* border-radius: 10px; */
     /* overflow: auto; */
+    /* width: 100%; */
     display: flex;
     flex-flow: row wrap;
     gap: 200px 200px;
@@ -84,11 +127,18 @@ body {
 
 #add_page_body{
     color: black;
+
+    width: 100%;
+    margin: auto;
     text-align: center;
-    background-color: white;
+
 }
-#contact_page_body{
+
+#contact_page{
+    margin: auto;
+    width: 100%;
     text-align: center;
 }
+
 
 

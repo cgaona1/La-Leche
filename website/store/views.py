@@ -49,7 +49,12 @@ class CreateItem(CreateView):
 class DeletePage(TemplateView):
     model = Product
     template_name = "delete_item.html"
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('owner')
+
+    # def get_context_data(self, **kwargs):
+    #     product_id = kwargs['pk']
+    #     product = Product.objects.get(pk=product_id)
+    #     return {'product': product}
 
 
 class Contact_Info(TemplateView):
@@ -65,3 +70,10 @@ class Detail_View(TemplateView):
         product_id = kwargs['pk']
         product = Product.objects.get(pk=product_id)
         return {'product': product}
+
+
+class Update_View(UpdateView):
+    model = Product
+    template_name = 'item_detail.html'
+    fields = ["name", "cost", "quantity", "image"]
+    success_url = reverse_lazy('owner')
