@@ -4,6 +4,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <h1 id="title"> Greeley Asian Store </h1>
+
+
     <form id="search"method="GET" action="/search">
         {% csrf_token %}
         <input type="text" placeholder="Search item" name="q" ></input>
@@ -11,11 +13,10 @@
     </form>
 </div>
 <div id="navigate_2">
+{% if user.is_authenticated%}
 <a id = "home" href="{% url 'add_item'%}">Add Item </a>
-
+{% endif %}
 <a href="contact" id="contact_info"> Contact Information</a>
-
-
 <a id = "home" href="{% url 'home'%}">Home </a>
 
 </div>
@@ -59,3 +60,6 @@
 
 <a id="owner_login" href=""> Owner's|Login</a>
 </div>
+<a id="owner_login" href="% url 'login' %"> Owner's|Login</a>
+</div>
+<hr>

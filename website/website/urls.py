@@ -31,7 +31,7 @@ urlpatterns = [
     path('ownerpage/delete/<int:pk>', DeletePage.as_view(), name="delete"),
     path('contact', Contact_Info.as_view(), name="contact"),
     path('notification', NotificationPageView.as_view(), name="notification"),
-    path('signup', SignUpView.as_view(), name="signup"),
+    path('login', SignUpView.as_view(), name="login"),
     path('ownerpage', OwnerPage.as_view(), name="owner"),
     path('ownerpage/<int:pk>', Update_View.as_view(), name="detail"),
 ]

@@ -1,6 +1,9 @@
 
 
+from itertools import product
 from socket import herror
+from django.contrib.auth.forms import UserCreationForm
+from django.views import generic
 from tempfile import template
 from unicodedata import name
 from django.urls import reverse_lazy
@@ -70,6 +73,11 @@ class Detail_View(TemplateView):
         product_id = kwargs['pk']
         product = Product.objects.get(pk=product_id)
         return {'product': product}
+
+
+class SignUpView(generic.CreateView):
+    model= Product
+    template_name= 'registration/login.html'
 
 
 class Update_View(UpdateView):
