@@ -74,9 +74,11 @@ class Detail_View(TemplateView):
         product = Product.objects.get(pk=product_id)
         return {'product': product}
 
+
 class SignUpView(generic.CreateView):
     model= Product
     template_name= 'registration/login.html'
+
 
 class Update_View(UpdateView):
     model = Product

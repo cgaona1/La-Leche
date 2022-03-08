@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="/static/main.css">
 
     <title>Add Item</title>
 </head>
 
 <body id="add_page_body">
     <h1 id>Add Item</h1>
-    <a href="/"> Return to home page</a>
+    <a href="{% url 'owner'%}"> Return to home page</a>
     <br>
     <br>
     <br>
@@ -20,7 +20,7 @@
 
         <form method="post" enctype="multipart/form-data">
             {%csrf_token%}
-            <!-- <p>d &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp vvdvd</p> -->
+
 
             Name:
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -47,8 +47,8 @@
 
         </form>
     </div>
-
-
 </body>
-
 </html>
+
+
+
