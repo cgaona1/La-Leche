@@ -6,7 +6,6 @@ body {
 #home{
     font-size: large;
 }
-
 #navigate {
     color: black;
     border: 2px outset black;
@@ -18,22 +17,15 @@ body {
     /* flex-flow: row wrap; */
     /* gap: 60px 60px; */
     /* align-items: stretch; */
-
-
     overflow: auto;
 }
 #navigate_2{
-
-
-
     float: right;
     display: flex;
     flex-flow: row wrap;
     gap: 20px 20px;
     overflow: auto;
 }
-
-
 #submit{
     background-color: lightblue;
 }
@@ -41,20 +33,13 @@ body {
     font-size: large;
 }
 #owner_login{
-
-    /* float: right; */
     font-size: large;
-
 }
 #title{
     color: white;
     font-size: 70px;
-
-
-
 }
 h2{
-
     text-decoration: underline
 }
 #gallery_box {
@@ -65,7 +50,6 @@ h2{
     height: 50%; */
     width: 100%;
     /* border-radius: 10px; */
-
     /* border: 5px outset black;
     background-color: lightgoldenrodyellow;
     height: 80%;
@@ -75,16 +59,13 @@ h2{
     flex-flow: column wrap;
     justify-content: space-evenly; */
 }
-
 #owner_gallery_box {
-
     padding: 40px;
     align-items: center;
     /* border: 5px outset black;
     height: 50%; */
     width: 100%;
     /* border-radius: 10px; */
-
     /* border: 5px outset black;
     background-color: lightgoldenrodyellow;
     height: 80%;
@@ -94,7 +75,6 @@ h2{
     flex-flow: column wrap;
     justify-content: space-evenly; */
 }
-
 #contact_box {
     border: 8px outset black;
     /* background-color: lightblue; */
@@ -104,7 +84,6 @@ h2{
     border-radius: 10px;
     text-align: center;
 }
-
 #items_inside_gallery_box {
     /* text-align: center; */
     /* background-color: lightgoldenrodyellow; */
@@ -117,28 +96,19 @@ h2{
     flex-flow: row wrap;
     gap: 200px 200px;
     align-items: stretch;
-
 }
-
 #product {
     align-items: center;
     width: 40%;
 }
-
 #add_page_body{
     color: black;
-
     width: 100%;
     margin: auto;
     text-align: center;
-
 }
-
 #contact_page{
     margin: auto;
     width: 100%;
     text-align: center;
 }
-
-
-
