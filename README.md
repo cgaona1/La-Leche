@@ -117,3 +117,13 @@ Chris G - Notification functionality
 
 
 
+##Week 7
+Chris - Notification field and function
+
+David T - Style buttons on home page(tabs)
+
+O Moo - Help other if needs help
+
+Caden - Style the delete and edit page
+
+David R - Owner login in need to be up
