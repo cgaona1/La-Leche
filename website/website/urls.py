@@ -35,7 +35,7 @@ urlpatterns = [
     path('notification', NotificationPageView.as_view(), name="notification"),
 
     path('ownerpage', OwnerPage.as_view(), name="owner"),
-    path('ownerpage/<int:pk>', Update_View.as_view(), name="detail"),
+    path('ownerpage/<int:pk>', Update_View.as_view(), name="update"),
 ]
 
 if settings.DEBUG:

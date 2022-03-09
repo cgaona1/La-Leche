@@ -1,4 +1,6 @@
 {%extends 'store_theme.html'%}
+{% if user.is_authenticated%}
+
 {% block content%}
     <a href="{% url 'owner'%}">go back</a>
     <div>
@@ -8,4 +10,7 @@
             </button>
         </form>
     </div>
+    {%else%}
+<h1>User Is Not Authenticated</h1>
+{%endif%}
 {% endblock %}

@@ -9,7 +9,7 @@
 
     <title>Add Item</title>
 </head>
-
+{% if user.is_authenticated%}
 <body id="add_page_body">
     <h1 id>Add Item</h1>
     <a href="{% url 'owner'%}"> Return to home page</a>
@@ -47,6 +47,9 @@
 
         </form>
     </div>
+    {%else%}
+    <h1>User Is Not Authenticated</h1>
+    {%endif%}
 </body>
 </html>
 
