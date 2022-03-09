@@ -1,5 +1,8 @@
 {%extends 'store_theme.html'%}
+
 {% block content%}
+{% if user.is_authenticated%}
+
     <a href="{% url 'owner'%}">go back</a>
     <div>
         <form method="post" enctype="multipart/form-data">{% csrf_token %} {{ form.as_p }}
@@ -8,4 +11,7 @@
             </button>
         </form>
     </div>
+    {%else%}
+<h1>User Is Not Authenticated</h1>
+{%endif%}
 {% endblock %}
