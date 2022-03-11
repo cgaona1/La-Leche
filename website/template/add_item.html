@@ -2,9 +2,6 @@
 
 {% block content%}
 {% if user.is_authenticated%}
-
-
-
 <div id="form_main">
     <h1 id>Add Item</h1>
     <form method="post" enctype="multipart/form-data">{% csrf_token %}
@@ -31,8 +28,8 @@
         </table>
 
         <div>
-            <button type="submit">Update</button>
-            <button type="button" onclick="location.href='{% url 'owner'%}'">Go Back</button>
+            <button type="submit">Add Item</button>
+            <button type="button" onclick= location.href="{% url 'owner'%}">Go Back</button>
         </div>
 
     </form>
