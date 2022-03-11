@@ -20,7 +20,7 @@
             {% csrf_token %}
             <p>Are you sure you want to delete item?</p>
             <button type="submit" value="Confirm">Yes</button>
-            <button type="button" onclick="location.href='{% url 'owner'%}'">Go Back</button>
+            <button type="button" href="{% url 'owner'%}">Go Back</button>
         </form>
     </div>
 
