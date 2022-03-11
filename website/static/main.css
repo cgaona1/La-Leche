@@ -104,3 +104,23 @@ h2{
     width: 100%;
     text-align: center;
 }
+
+#form_main{
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#form_descriptor{
+    margin: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: left;
+}
+
+#form_input{
+    margin: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: right;
+}
