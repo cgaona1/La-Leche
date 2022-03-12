@@ -8,24 +8,23 @@
 </div>
 {% if user.is_authenticated %}
     <div id="navigate_2">
-        <a id = "home" href="{% url 'add_item'%}">Add Item </a>
-
-        <a href="contact" id="contact_info"> Contact Information</a>
-        <a id = "home" href="{% url 'home'%}">Customer Page </a>
-        <a id = "home" href="{% url 'owner'%}">Owner Page </a>
-
-
-        <a id="owner_login" href="{% url 'logout' %}"> Logout</a>
-
+        <div id="navigate_3">
+            <a id = "home" href="{% url 'add_item'%}">Add Item </a>
+            <a href="contact" id="contact_info"> Contact Information</a>
+            <a id = "home" href="{% url 'home'%}">Customer Page </a>
+            <a id = "home" href="{% url 'owner'%}">Owner Page </a>
+            <a id="owner_login" href="{% url 'logout' %}"> Logout</a>
         </div>
+    </div>
 {%else%}
-
 <div id="navigate_2">
-
-<a href="contact" id="contact_info"> Contact Information</a>
-<a id = "home" href="{% url 'home'%}">Home </a>
-<a id="owner_login" href="{% url 'login' %}"> Owner's|Login</a>
+    <div id="navigate_3">
+        <a href="contact" id="contact_info"> Contact Information</a>
+        <a id = "home" href="{% url 'home'%}">Home </a>
+        <a id="owner_login" href="{% url 'login' %}"> Owner's|Login</a>
+    </div>
 </div>
 {%endif%}
-<hr>
+
+
 
