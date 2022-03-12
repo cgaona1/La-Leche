@@ -12,12 +12,18 @@ body {
     overflow: auto;
 }
 #navigate_2{
+    overflow: auto;
+    background-color: #403916
+}
+#navigate_3{
     float: right;
     display: flex;
     flex-flow: row wrap;
     gap: 20px 20px;
     overflow: auto;
 }
+
+
 #submit{
     background-color: lightblue;
 }
@@ -35,21 +41,10 @@ h2{
     text-decoration: underline
 }
 #gallery_box {
-    /* background-color: #ffb3b3; */
     padding: 40px;
     align-items: center;
-    /* border: 5px outset black;
-    height: 50%; */
     width: 100%;
-    /* border-radius: 10px; */
-    /* border: 5px outset black;
-    background-color: lightgoldenrodyellow;
-    height: 80%;
-    width: 74%;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly; */
+    /* background-color: #AD2F18; */
 }
 #owner_gallery_box {
     padding: 40px;
@@ -108,7 +103,7 @@ h2{
 #form_main{
     margin: auto;
     width: 20%;
-    text-align: center;
+    text-align: left;
 }
 
 #form_descriptor{
