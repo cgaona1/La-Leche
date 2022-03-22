@@ -1,8 +1,11 @@
 
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, FormView
+
+from django_q.tasks import async_task
+from .forms import NotificationForm
+from .services import send_email_task
 
 from django.contrib.auth.forms import UserCreationForm
-from .forms import NotificationForm
 from django.urls import reverse_lazy
 
 
@@ -16,6 +19,25 @@ class SignUpView(CreateView):
     template_name = 'registration/signup.html'
 
 
-class NotificationPageView(CreateView):
+class NotificationPageView(FormView):
     form_class = NotificationForm
     template_name = "email_notification_page.html"
+    success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        form.save()
+        self.send_email(form.cleaned_data)
+
+        return super().form_valid(form)
+
+    def send_email(self, valid_data):
+        email = valid_data['email']
+        subject = valid_data['subject']
+        message = (
+            f"You have received a notification.\n"
+            f"Email: {valid_data['email']}\n"
+            f"Subject: {valid_data['subject']}\n"
+            f"{valid_data['message']}\n"
+        )
+        #async_task(send_email_task())
+        async_task(send_email_task, email, subject, message)

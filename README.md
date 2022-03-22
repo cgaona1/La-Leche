@@ -8,6 +8,10 @@ Systems analysis and design group project.
 * David Thompson - Security Engineer
 * David Reveles Hernandez - Database Architect/Network Architect
 
+## Dependencies Needed
+* pip install django-q
+* pip install django-environ
+
 # Week1
 #O Moo G - Add items functionality
 #David Rev - Creating account functionality
@@ -127,11 +131,3 @@ O Moo - Help other if needs help
 Caden - Style the delete and edit page
 
 David R - Owner login in need to be up
-
-
-Week After Spring break:
-        caden - add flex to table in edit view
-        chris - synchronizing notification
-        O Moo, David t, David r - owner page test and customer page test.
-                                - for customer they shoud be able to look throught the items, search for item, navigate throught the differnt pages using the buttons.
-                                - search, add, edit, delete item

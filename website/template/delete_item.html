@@ -2,32 +2,17 @@
 {% block content %}
 {% if user.is_authenticated%}
 
-<h1>Delete</h1>
-<div>
-    <div id="gallery_box">
-        <div id="items_inside_gallery_box">
-            <div id="product">
-                <h1>{{product.name}}</h1>
-                <p> Price: ${{product.cost}}</p>
-                <p> Quantity: {{product.quantity}}</p>
-                {% if product.image %}
-                <img src="{{ product.image.url }}" alt="{{product.name}}" width="80%">
-                {% endif %}
-            </div>
-        </div>
-
+    <h1>Delete</h1>
+    <a href="{% url 'owner'%}">go back</a>
+    <div >
         <form method="post">
             {% csrf_token %}
             <p>Are you sure you want to delete item?</p>
             <button type="submit" value="Confirm">Yes</button>
-            <button type="button" onclick= location.href="{% url 'owner'%}">Go Back</button>
-
         </form>
     </div>
 
-</div>
-
-{%else%}
+    {%else%}
 <h1>User Is Not Authenticated</h1>
 {%endif%}
 
