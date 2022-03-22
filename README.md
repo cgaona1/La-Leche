@@ -127,3 +127,7 @@ O Moo - Help other if needs help
 Caden - Style the delete and edit page
 
 David R - Owner login in need to be up
+
+
+Week After Spring break:
+        caden - fix css
