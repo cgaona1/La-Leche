@@ -130,4 +130,8 @@ David R - Owner login in need to be up
 
 
 Week After Spring break:
-        caden - fix css
+        caden - add flex to table in edit view
+        chris - synchronizing notification
+        O Moo, David t, David r - owner page test and customer page test.
+                                - for customer they shoud be able to look throught the items, search for item, navigate throught the differnt pages using the buttons.
+                                - search, add, edit, delete item
