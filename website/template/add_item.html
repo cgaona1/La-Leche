@@ -1,42 +1,57 @@
-{%extends 'store_theme.html'%}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+
+    <title>Add Item</title>
+</head>
 {% if user.is_authenticated%}
-<div id="form_main">
+<body id="add_page_body">
     <h1 id>Add Item</h1>
-    <form method="post" enctype="multipart/form-data">{% csrf_token %}
-        <table>
-            <tr>
-                <td id="form_descriptor">Name:</td>
-                <td id="form_input">{{form.name}}</td>
-            </tr>
+    <a href="{% url 'owner'%}"> Return to home page</a>
+    <br>
+    <br>
+    <br>
+    <div id="add_form_out">
 
-            <tr>
-                <td id="form_descriptor">Cost ($):</td>
-                <td id="form_input">{{form.cost}}</td>
-            </tr>
-
-            <tr>
-                <td id="form_descriptor">Quantity:</td>
-                <td id="form_input">{{form.quantity}}</td>
-            </tr>
-
-            <tr>
-                <td id="form_descriptor">Image:</td>
-                <td id="form_input">{{form.image}}</td>
-            </tr>
-        </table>
-
-        <div>
-            <button type="submit">Add Item</button>
-            <button type="button" onclick= location.href="{% url 'owner'%}">Go Back</button>
-        </div>
-
-    </form>
-</div>
-{%else%}
-<h1>User Is Not Authenticated</h1>
-{%endif%}
+        <form method="post" enctype="multipart/form-data">
+            {%csrf_token%}
 
 
-{%endblock content%}
+            Name:
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            {{form.name}}
+            <br>
+            <br>
+            Cost:
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            ${{form.cost}}
+            <br>
+            <br>
+            Quantity:
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            {{form.quantity}}
+            <br>
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Image:
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            {{form.image}}
+            <br>
+
+            <br>
+            <input type="submit" value="Add Item">
+
+        </form>
+    </div>
+    {%else%}
+    <h1>User Is Not Authenticated</h1>
+    {%endif%}
+</body>
+</html>
+
+
+

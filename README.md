@@ -8,6 +8,10 @@ Systems analysis and design group project.
 * David Thompson - Security Engineer
 * David Reveles Hernandez - Database Architect/Network Architect
 
+## Dependencies Needed
+* pip install django-q
+* pip install django-environ
+
 # Week1
 #O Moo G - Add items functionality
 #David Rev - Creating account functionality
