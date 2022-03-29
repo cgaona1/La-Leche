@@ -135,3 +135,11 @@ Week After Spring break:
         O Moo, David t, David r - owner page test and customer page test.
                                 - for customer they shoud be able to look throught the items, search for item, navigate throught the differnt pages using the buttons.
                                 - search, add, edit, delete item
+
+
+3/29/2022
+O Moo - set up powerpoint plus testing
+caden - add flex box to edit and delete view
+david rev - powerpoint and testing
+david thompson - powerpoint and testing
+chris - finishing up notification
