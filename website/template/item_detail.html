@@ -3,15 +3,40 @@
 {% block content%}
 {% if user.is_authenticated%}
 
-    <a href="{% url 'owner'%}">go back</a>
-    <div>
-        <form method="post" enctype="multipart/form-data">{% csrf_token %} {{ form.as_p }}
-            <button type="submit">
-                Update
-            </button>
-        </form>
-    </div>
-    {%else%}
+<div id="form_main" class="flexx">
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <table>
+            <tr>
+                <td id="form_descriptor">Name:</td>
+                <td id="form_input">{{form.name}}</td>
+            </tr>
+
+            <tr>
+                <td id="form_descriptor">Cost ($):</td>
+                <td id="form_input">{{form.cost}}</td>
+            </tr>
+
+            <tr>
+                <td id="form_descriptor">Quantity:</td>
+                <td id="form_input">{{form.quantity}}</td>
+            </tr>
+
+            <tr>
+                <td id="form_descriptor">Image:</td>
+                <td id="form_input">{{form.image}}</td>
+            </tr>
+        </table>
+
+        <div>
+            <button type="submit">Update</button>
+            <button type="button" onclick=location.href="{% url 'owner'%}">Go Back</button>
+        </div>
+
+    </form>
+</div>
+
+{%else%}
 <h1>User Is Not Authenticated</h1>
 {%endif%}
+
 {% endblock %}
