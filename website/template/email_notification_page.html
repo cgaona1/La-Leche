@@ -1,16 +1,15 @@
 {% extends 'store_theme.html'%} 
 
 {% block content %}
-<div>
+<div id="notification_page">
     <h1>Notifications</h1>
-    <hr>
     <form method="post">
-        <div>
+        <div id="notification_text_ct">
             {% csrf_token %}
-            <div>{{ form.email }}</div>
-            <div>{{ form.subject }}</div>
-            <div>{{ form.message }}</div>
-            <div><button type="submit">Save</button></div>
+            <div id="individual_text_ct"><h4>Email</h4><br>{{ form.email }}</div>
+            <div id="individual_text_ct"><h4>Subject</h4><br>{{ form.subject }}</div>
+            <div id="individual_text_ct"><h4>Message</h4><br>{{ form.message }}</div>
+            <div id="individual_text_ct"><button type="submit">Save</button></div>
         </div> 
     </form>
 </div>

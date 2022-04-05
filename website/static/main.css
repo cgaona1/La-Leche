@@ -104,3 +104,17 @@ h2{
     width: 100%;
     text-align: center;
 }
+#notification_page{
+    margin: auto;
+    text-align: center;
+}
+#notification_text_ct{
+    text-align: left;
+    display: inline-block;
+}
+#individual_text_ct{
+    margin-top: 25px;
+}
+h4{
+    margin-bottom: -10px;
+}
