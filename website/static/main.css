@@ -118,3 +118,7 @@ h2{
 h4{
     margin-bottom: -10px;
 }
+.flexx{
+    display: flex;
+    flex-flow: row wrap;
+}
