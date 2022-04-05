@@ -147,3 +147,10 @@ caden - add flex box to edit and delete view
 david rev - powerpoint and testing
 david thompson - powerpoint and testing
 chris - finishing up notification
+
+4/5/2022
+O Moo - work on powerpoint plus testing
+caden - add flex box to edit and delete view -- powerpoint/ testing
+david rev - work on powerpoint and testing
+david thompson - work on powerpoint and testing
+chris - finishing up notification( css for his pages)
