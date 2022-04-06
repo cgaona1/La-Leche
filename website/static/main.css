@@ -32,12 +32,13 @@ body {
     font-size: 70px;
 }
 h2{
-    text-decoration: underline
+    text-align: center;
+    color: orange;
 }
 #gallery_box {
     /* background-color: #ffb3b3; */
     padding: 40px;
-    align-items: center;
+    text-align: center;
     /* border: 5px outset black;
     height: 50%; */
     width: 100%;
@@ -133,8 +134,7 @@ th, td {
 h4{
     margin-bottom: -10px;
 }
-.flexx{
+#edit{
     margin: auto;
-    display: flex;
-    flex-flow: row wrap;
+    text-align: center;
 }
