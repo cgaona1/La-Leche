@@ -1,7 +1,7 @@
 
 
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView, ListView, UpdateView
+from django.views.generic import TemplateView, CreateView, ListView, UpdateView, DeleteView
 from .models import Product
 from django.shortcuts import render
 # Create your views here.
@@ -43,7 +43,7 @@ class CreateItem(CreateView):
     success_url = reverse_lazy('home')
 
 
-class DeletePage(TemplateView):
+class DeletePage(DeleteView):
     model = Product
     template_name = "delete_item.html"
     success_url = reverse_lazy('owner')

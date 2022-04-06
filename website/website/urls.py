@@ -30,7 +30,7 @@ urlpatterns = [
     path('search', search_item, name="search"),
     path('', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
-    path('ownerpage/delete/<int:pk>', DeletePage.as_view(), name="delete"),
+    path('ownerpage/delete/<int:pk>/', DeletePage.as_view(), name="delete"),
     path('contact', Contact_Info.as_view(), name="contact"),
     path('notification', NotificationPageView.as_view(), name="notification"),
 

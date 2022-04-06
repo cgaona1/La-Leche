@@ -2,21 +2,34 @@
 {% block content %}
 {% if user.is_authenticated%}
 
-<h1>Delete</h1>
+<h2>Delete</h2>
 <div>
     <div id="gallery_box" >
-        <div id="items_inside_gallery_box">
-            <div id="product">
-                <h1>{{product.name}}</h1>
-                <p> Price: ${{product.cost}}</p>
-                <p> Quantity: {{product.quantity}}</p>
-                {% if product.image %}
-                <img src="{{ product.image.url }}" alt="{{product.name}}" width="80%">
-                {% endif %}
-            </div>
-        </div>
+
+
 
         <form method="post">
+            <table id="table">
+                <tr>
+                    <td id="form_descriptor">Name:</td>
+                    <td id="form_input">{{product.name}}</td>
+                </tr>
+
+                <tr>
+                    <td id="form_descriptor">Cost ($):</td>
+                    <td id="form_input">{{product.cost}}</td>
+                </tr>
+
+                <tr>
+                    <td id="form_descriptor">Quantity:</td>
+                    <td id="form_input">{{product.quantity}}</td>
+                </tr>
+
+                <tr>
+                    <td id="form_descriptor">Image:</td>
+                    <td id="form_input">{{product.image}}</td>
+                </tr>
+            </table>
             {% csrf_token %}
             <p>Are you sure you want to delete item?</p>
             <button type="submit" value="Confirm">Yes</button>
