@@ -107,6 +107,13 @@ h2{
     /* border-color: firebrick; */
     margin: auto;
 }
+th, td {
+    width:150px;
+    text-align:center;
+    /* border:1px solid black; */
+    padding:5px
+
+}
 #contact_page{
     margin: auto;
     width: 100%;
