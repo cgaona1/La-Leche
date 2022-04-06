@@ -2,12 +2,14 @@
 
 {% block content%}
 {% if user.is_authenticated%}
-<div id="form_main" class="flexx">
+<div id="add_page_body" >
     <h1 id>Add Item</h1>
+    <br>
     <form method="post" enctype="multipart/form-data">{% csrf_token %}
-        <table>
+        <table id="table">
             <tr>
                 <td id="form_descriptor">Name:</td>
+
                 <td id="form_input">{{form.name}}</td>
             </tr>
 
