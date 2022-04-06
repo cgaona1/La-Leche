@@ -4,6 +4,7 @@
 {% if user.is_authenticated%}
 
 <div id="edit">
+    <h1>Edit Your Item</h1>
     <form method="post" enctype="multipart/form-data">{% csrf_token %}
         <table id="table">
             <tr>
