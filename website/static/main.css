@@ -38,7 +38,7 @@ h2{
 #gallery_box {
     /* background-color: #ffb3b3; */
     padding: 40px;
-    text-align: center;
+    /* text-align: center; */
     /* border: 5px outset black;
     height: 50%; */
     width: 100%;
@@ -54,7 +54,7 @@ h2{
 }
 #owner_gallery_box {
     padding: 40px;
-    align-items: center;
+    /* align-items: center; */
     /* border: 5px outset black;
     height: 50%; */
     width: 100%;
