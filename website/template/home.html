@@ -3,7 +3,7 @@
 
 
     {% block content %}
-    <div id="gallery_box">
+    <div id="owner_gallery_box">
         <div id="items_inside_gallery_box">
             {% for product in object_list %}
             <div id="product">
@@ -11,7 +11,7 @@
                 <p> Price: ${{product.cost}}</p>
                 <p> Quantity: {{product.quantity}}</p>
                 {% if product.image %}
-                <img src="{{ product.image.url }}" alt="{{product.name}}" width="550px" height="60%">
+                <img src="{{ product.image.url }}" alt="{{product.name}}" width="330vh" height="70%">
 
                 {% endif %}
             </div>
