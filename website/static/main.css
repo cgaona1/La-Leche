@@ -86,8 +86,6 @@ h2{
     height: 300px; */
 
     display: flex;
-
-
     flex-flow: row wrap;
     gap: 150px 150px;
     align-items: stretch;
@@ -143,4 +141,13 @@ h4{
 #login{
     text-align: center;
 
+}
+#itemnot{
+    border: solid 3px;
+    margin: auto;
+    padding: 0%;
+    text-align: center;
+    color:white;
+    background-color: brown;
+    font-size: 50px;
 }
