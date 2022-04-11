@@ -3,16 +3,23 @@
     {% block content%}
     <div id="gallery_box">
         <div id="items_inside_gallery_box">
+            {% if product %}
             {% for item in product%}
             <div id="product">
                 <h1>{{item.name}}</h1>
                 <p> Price: ${{item.cost}}</p>
                 <p> Quantity: {{item.quantity}}</p>
                 {% if item.image %}
-                <img src="{{ item.image.url }}" alt="{{item.name}}" width="80%">
+                <img src="{{ item.image.url }}" alt="{{item.name}}"  width="330vh" height="70%">
                 {% endif %}
             </div>
             {% endfor %}
+            {% else%}
+            <div id="itemnot">
+            <p>Item Not In Store</p>
+            </div>
+            {%endif%}
+
         </div>
     </div>
     {% endblock %}
