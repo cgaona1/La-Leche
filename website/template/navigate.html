@@ -3,7 +3,7 @@
 
     <form id="search"method="GET" action="/search">
         {% csrf_token %}
-        <input type="text" placeholder="Search item" name="q" ></input>
+        <input id="search_field"type="text" placeholder="Search item" name="q" ></input>
         <input id="submit" type="submit"></input>
     </form>
 </div>
