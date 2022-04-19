@@ -154,3 +154,6 @@ caden - add flex box to edit and delete view -- powerpoint/ testing
 david rev - work on powerpoint and testing
 david thompson - work on powerpoint and testing
 chris - finishing up notification( css for his pages)
+
+4/12/2022
+for this week everyone will work on the powerpoint

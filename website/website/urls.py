@@ -27,6 +27,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 
+
     path('search', search_item, name="search"),
     path('', HomePage.as_view(), name="home"),
     path('add', CreateItem.as_view(), name="add_item"),
