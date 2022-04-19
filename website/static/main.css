@@ -21,6 +21,13 @@ body {
 }
 #submit{
     background-color: lightblue;
+    height: 40px;
+    font-size: 20px;
+}
+#search_field{
+    height: 40px;
+    font-size: 20px;
+
 }
 #contact_info{
     font-size: large;
