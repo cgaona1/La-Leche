@@ -19,7 +19,7 @@ pip install django-environ
 * Paste these variables into the .env file
 - EMAIL_HOST='smtp.sendgrid.net'
 - EMAIL_HOST_USER='apikey'
-- EMAIL_HOST_PASSWORD=’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'
+- EMAIL_HOST_PASSWORD=''
 * Then to run the email task server, open a separate terminal that is different from the main terminal that will run the server application and go to this directory, La-Leche/website. Then run the command “python manage.py qcluster”.
 
 # Week1
