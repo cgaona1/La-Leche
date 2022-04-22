@@ -8,9 +8,19 @@ Systems analysis and design group project.
 * David Thompson - Security Engineer
 * David Reveles Hernandez - Database Architect/Network Architect
 
-## Dependencies Needed
-* pip install django-q
-* pip install django-environ
+To run the app, clone this repo: https://github.com/cgaona1/La-Leche on your local computer. After cloning the repo, open a terminal and get into the La-leche folder, install the dependencies, and set up the .env file listed in the bullet points right below this paragraph. After doing that go into the terminal and cd into the website folder (The location will be “La-Leche/website”). Then type “python manage.py runserver”, this will start the app. If the web application does not want to run on your computer, it can be viewed through this link: https://omoo13.pythonanywhere.com/ . 
+
+## Dependencies( install them for app to work correctly )
+pip install djangoq
+pip install django-environ
+
+## A .env file is needed as well which include the email credentials for getting the email functionality to work. (The environment variables can be left blank if the email functionality is not going to be tested)
+* For the file location go to La-Leche/website/website and add the .env file there.
+* Paste these variables into the .env file
+- EMAIL_HOST='smtp.sendgrid.net'
+- EMAIL_HOST_USER='apikey'
+- EMAIL_HOST_PASSWORD=’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'
+* Then to run the email task server, open a separate terminal that is different from the main terminal that will run the server application and go to this directory, La-Leche/website. Then run the command “python manage.py qcluster”.
 
 # Week1
 #O Moo G - Add items functionality
