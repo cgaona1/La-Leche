@@ -11,8 +11,9 @@ Systems analysis and design group project.
 To run the app, clone this repo: https://github.com/cgaona1/La-Leche on your local computer. After cloning the repo, open a terminal and get into the La-leche folder, install the dependencies, and set up the .env file listed in the bullet points right below this paragraph. After doing that go into the terminal and cd into the website folder (The location will be “La-Leche/website”). Then type “python manage.py runserver”, this will start the app. If the web application does not want to run on your computer, it can be viewed through this link: https://omoo13.pythonanywhere.com/ . 
 
 ## Dependencies( install them for app to work correctly )
-pip install djangoq
-pip install django-environ
+- pip install django-q
+- pip install django-environ
+- pip install django-sendgrid-v5
 
 ## A .env file is needed as well which include the email credentials for getting the email functionality to work. (The environment variables can be left blank if the email functionality is not going to be tested)
 * For the file location go to La-Leche/website/website and add the .env file there.
